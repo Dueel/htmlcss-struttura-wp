@@ -1,3 +1,59 @@
-body{
-  background-color: red;
+/* GENERIC RULES */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, main, footer{
+  width: 50%;
+  margin: 20px auto;
+
+}
+
+/* SPECIFIC RULES */
+header{
+  height: 80px;
+  background-color: pink;
+}
+
+.first{
+  height: 200px;
+  background-color: yellow;
+  margin-bottom: 20px;
+}
+
+.second{
+  background-color: blue;
+  position: relative;
+}
+
+.second::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.second div{
+  background-color: lightblue;
+}
+
+.title{
+  height: 50px;
+  margin-bottom: 2.5vmax;
+}
+
+.container{
+  width: 30%;
+  height: 300px;
+  float: left;
+}
+
+.container:nth-child(3){
+  margin: 0 5%;
+}
+
+footer{
+  height: 80px;
+  background-color: purple;
 }
